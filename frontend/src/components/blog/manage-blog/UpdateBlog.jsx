@@ -30,7 +30,7 @@ const UpdateBlog = () => {
 
     try {
       const res = await axios.put(
-        `https://meta-blog-backend-weld.vercel.app/blogs/${id}`,
+        `https://meta-blog-backend-ruhul.vercel.app/blogs/${id}`,
         blogData
       );
       console.log(res.data);
@@ -46,7 +46,7 @@ const UpdateBlog = () => {
   useEffect(() => {
     (async () => {
       const res = await axios.get(
-        `https://meta-blog-backend-weld.vercel.app/blogs/${id}`
+        `https://meta-blog-backend-ruhul.vercel.app/blogs/${id}`
       );
       const data = res.data.blog;
       //  setBlog(data)

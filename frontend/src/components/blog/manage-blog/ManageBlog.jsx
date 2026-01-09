@@ -12,7 +12,7 @@ const ManageBlog = () => {
     try {
       (async () => {
         const res = await axios.get(
-          "https://meta-blog-backend-weld.vercel.app/blogs"
+          "https://meta-blog-backend-ruhul.vercel.app/blogs"
         );
         const data = await res.data.blog;
         setBlogs(data);
@@ -24,7 +24,7 @@ const ManageBlog = () => {
 
   const handleDelete = async (id) => {
     const res = await axios.delete(
-      `https://meta-blog-backend-weld.vercel.app/blogs/${id}`
+      `https://meta-blog-backend-ruhul.vercel.app/blogs/${id}`
     );
     const result = await res.data;
     console.log(result);

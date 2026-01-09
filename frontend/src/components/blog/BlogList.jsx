@@ -15,7 +15,7 @@ const BlogList = () => {
     try {
       (async () => {
         const res = await axios.get(
-          "https://meta-blog-backend-weld.vercel.app/blogs"
+          "https://meta-blog-backend-ruhul.vercel.app/blogs"
         );
         const data = res.data.blog;
         setBlogData(data);

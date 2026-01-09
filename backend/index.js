@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const dbConfig = require("./dbConfig/db");
-const port = process.env.PORT || 3000;
+const port =  7000;
 const blogRoutes = require("./src/routes/blogRoutes");
 
 app.use(express.json());
